@@ -80,18 +80,7 @@ You can run Pi with a one-off request directly from the terminal or enter intera
 
 This enters the interactive shell prompt:
 
-```text
-██████╗ ██╗
-██╔══██╗██║
-██████╔╝██║
-██╔═══╝ ██║
-██║     ██║
-╚═╝     ╚═╝
-[사용 모델]: gemini-2.5-flash-lite
-
-대화식 입력 모드로 진입했다. (종료: 'exit'/'q', 지표: 'stats', 커버리지: 'coverage', 의존성: 'depgraph', 도움말: 'help'/'h', 저장: 'save', 불러오기: 'load')
-
-pi >
+C:\User\MyFolder>
 ```
 
 ---
