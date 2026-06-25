@@ -1,12 +1,13 @@
 # Pi - AI-Powered System Command Execution via Python
 
-Pi is an advanced Command Line Interface (CLI) assistant built in Go. It acts as an autonomous pair-programming agent that helps developers generate, execute, and troubleshoot Python code in real-time. By leveraging the Gemini API, Pi creates a seamless feedback loop that automatically fixes runtime exceptions, manages virtual environments, and installs required packages dynamically.
+Pi is an advanced Command Line Interface (CLI) assistant built in Go. When a user inputs natural language, Pi automatically generates and executes the corresponding Python code. Through this generated Python code, Pi can seamlessly execute PowerShell commands and interact with the host system. By leveraging the Gemini API, Pi creates an autonomous feedback loop that automatically fixes runtime exceptions, manages virtual environments, and installs required packages dynamically.
 
 ---
 
 ## Key Features
 
-- **AI Pair Programming (Gemini API Integration):** Write, design, and optimize Python code iteratively through interactive conversations.
+- **Natural Language Execution:** Simply input natural language prompts, and Pi automatically generates and executes the necessary Python code.
+- **PowerShell Command Execution:** The generated Python scripts can directly execute Windows PowerShell commands, enabling deep system integration and automation.
 - **Auto-Execution & Feedback Loop:** Pi writes code into temporary files (`py-cli-YYYYMMDDhhmmss.py`), runs them, and captures standard outputs, errors, and system exceptions. If the execution fails, the AI automatically analyzes the failure and attempts self-recovery.
 - **Dynamic Dependency Management:** Checks the project's dependency state and automatically installs required packages using `pip` if a `requirements.txt` file is present.
 - **Interactive REPL Commands:**
@@ -78,9 +79,10 @@ You can run Pi with a one-off request directly from the terminal or enter intera
 ./pi.exe
 ```
 
-This enters the interactive shell prompt:
+This enters the interactive shell prompt, which dynamically displays your current working directory:
 
-C:\User\MyFolder>
+```text
+C:\Users\username\project> 
 ```
 
 ---
